@@ -1,0 +1,9 @@
+__pycache__/
+*.egg-info/
+build/
+.venv/
+src/navala/locale/
+*.snap
+parts/
+stage/
+prime/

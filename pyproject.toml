@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facetfall"
+version = "1.0.0"
+description = "Geometric brick breaker with 50 levels and 15 power-ups"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["pygame-ce>=2.5.6"]
+
+[project.scripts]
+facetfall = "facetfall.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+facetfall = ["locale/*/LC_MESSAGES/*.mo", "icon.png"]

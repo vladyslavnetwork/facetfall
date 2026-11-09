@@ -1,0 +1,67 @@
+name: facetfall
+title: Facetfall
+version: '1.0.0'
+summary: Geometric brick breaker — 50 levels, 15 power-ups
+description: |
+  Facetfall is a classic paddle-and-ball brick breaker inspired by the arcade
+  and DOS games of the 1980s. Break every faceted block, catch power-ups and
+  don't let the ball fall.
+
+  - 50 geometric levels with steadily rising difficulty, checkpoints every 5 levels
+  - Tough, steel and explosive blocks
+  - 15 power-ups: three balls, wide paddle, shield, laser, fireball, magnet,
+    mega ball, split balls and more — plus a few you'd better avoid
+  - The further you get, the stronger the bonuses
+
+  Languages: English, Ukrainian, Polish, German, French, Spanish.
+  Controls: mouse or arrow keys to move, click or Space to launch/fire,
+  P to pause, F11 for fullscreen.
+license: MIT
+icon: snap/gui/facetfall.png
+website: https://github.com/vladyslavnetwork/facetfall
+contact: https://github.com/vladyslavnetwork/facetfall/issues
+source-code: https://github.com/vladyslavnetwork/facetfall
+issues: https://github.com/vladyslavnetwork/facetfall/issues
+
+base: core26
+confinement: strict
+grade: stable
+
+platforms:
+  amd64:
+  arm64:
+
+apps:
+  facetfall:
+    command: bin/facetfall
+    extensions: [gnome]
+    plugs:
+      - audio-playback
+      - opengl
+
+parts:
+  # У core26 немає вбудованого Python, тому кладемо інтерпретатор у пакет.
+  python-runtime:
+    plugin: nil
+    stage-packages:
+      - libpython3.14-minimal
+      - libpython3.14-stdlib
+      - python3-minimal
+      - python3.14-minimal
+      - python3.14-venv
+
+  facetfall:
+    after: [python-runtime]
+    plugin: python
+    source: .
+    build-packages:
+      - gettext
+    build-environment:
+      # Розширення gnome підставляє свій PYTHONPATH і PATH із gnome-core26-sdk,
+      # через що venv бере чужий pip і чужий python3. Повертаємо наш Python.
+      - PATH: ${CRAFT_STAGE}/usr/bin:${PATH}
+      - PYTHONPATH: ""
+    override-build: |
+      # Компілюємо переклади (.po -> .mo) перед встановленням пакета
+      ./tools/compile_translations.sh
+      craftctl default

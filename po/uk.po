@@ -1,0 +1,206 @@
+# uk translation for Facetfall.
+# This file is distributed under the same license as the facetfall package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: facetfall 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 08:00+0000\n"
+"PO-Revision-Date: 2026-11-09 12:00+0200\n"
+"Last-Translator: Vladyslav\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/facetfall/game.py:173 src/facetfall/powerups.py:43
+msgid "Extra life"
+msgstr "Додаткове життя"
+
+#: src/facetfall/game.py:559
+#, python-brace-format
+msgid "+{n} points"
+msgstr "+{n} очок"
+
+#: src/facetfall/game.py:603 src/facetfall/game.py:702
+msgid "HI-SCORE"
+msgstr "РЕКОРД"
+
+#: src/facetfall/game.py:615
+msgid "Break every facet. Don't let the ball fall!"
+msgstr "Розбий кожну грань. Не впусти м'яч!"
+
+#: src/facetfall/game.py:617
+msgid "On"
+msgstr "Увімк."
+
+#: src/facetfall/game.py:617
+msgid "Off"
+msgstr "Вимк."
+
+#: src/facetfall/game.py:619
+msgid "New game"
+msgstr "Нова гра"
+
+#: src/facetfall/game.py:620
+#, python-brace-format
+msgid "Continue from level {n}"
+msgstr "Продовжити з рівня {n}"
+
+#: src/facetfall/game.py:621 src/facetfall/game.py:646
+msgid "Bonuses"
+msgstr "Бонуси"
+
+#: src/facetfall/game.py:622
+#, python-brace-format
+msgid "Language: {name}"
+msgstr "Мова: {name}"
+
+#: src/facetfall/game.py:623
+#, python-brace-format
+msgid "Sound: {state}"
+msgstr "Звук: {state}"
+
+#: src/facetfall/game.py:624
+#, python-brace-format
+msgid "Fullscreen: {state}"
+msgstr "Повний екран: {state}"
+
+#: src/facetfall/game.py:625
+msgid "Quit"
+msgstr "Вийти"
+
+#: src/facetfall/game.py:640
+#, python-brace-format
+msgid "{n} levels · checkpoint every {k} levels"
+msgstr "{n} рівнів · контрольна точка кожні {k} рівнів"
+
+#: src/facetfall/game.py:642
+msgid ""
+"MOUSE or ARROWS move    CLICK or SPACE launch/fire    P pause    F11 "
+"fullscreen"
+msgstr ""
+"МИША або СТРІЛКИ рух    КЛІК або ПРОБІЛ запуск/постріл    P пауза    F11 "
+"повний екран"
+
+#: src/facetfall/game.py:657
+msgid "Avoid:"
+msgstr "Уникай:"
+
+#: src/facetfall/game.py:662
+msgid "The further you get, the stronger the bonuses."
+msgstr "Що далі проходиш, то крутіші бонуси."
+
+#: src/facetfall/game.py:663
+msgid "Press any key to return"
+msgstr "Натисни будь-яку клавішу, щоб повернутися"
+
+#: src/facetfall/game.py:700
+msgid "SCORE"
+msgstr "РАХУНОК"
+
+#: src/facetfall/game.py:704 src/facetfall/game.py:757
+#, python-brace-format
+msgid "LEVEL {n}"
+msgstr "РІВЕНЬ {n}"
+
+#: src/facetfall/game.py:758
+msgid "Click or press SPACE to launch"
+msgstr "Клікни або натисни ПРОБІЛ, щоб запустити м'яч"
+
+#: src/facetfall/game.py:760
+msgid "Level complete!"
+msgstr "Рівень пройдено!"
+
+#: src/facetfall/game.py:763
+#, python-brace-format
+msgid "Checkpoint: level {n}"
+msgstr "Контрольна точка: рівень {n}"
+
+#: src/facetfall/game.py:766
+msgid "PAUSED"
+msgstr "ПАУЗА"
+
+#: src/facetfall/game.py:767
+msgid "P — continue    ESC — main menu"
+msgstr "P — продовжити    ESC — головне меню"
+
+#: src/facetfall/game.py:769
+msgid "GAME OVER"
+msgstr "ГРУ ЗАКІНЧЕНО"
+
+#: src/facetfall/game.py:771
+msgid "NEW HIGH SCORE!"
+msgstr "НОВИЙ РЕКОРД!"
+
+#: src/facetfall/game.py:773 src/facetfall/game.py:779
+msgid "Press ENTER to continue"
+msgstr "Натисни ENTER, щоб продовжити"
+
+#: src/facetfall/game.py:776
+msgid "YOU WIN!"
+msgstr "ПЕРЕМОГА!"
+
+#: src/facetfall/game.py:777
+#, python-brace-format
+msgid "All {n} levels cleared!"
+msgstr "Усі {n} рівнів пройдено!"
+
+#: src/facetfall/powerups.py:41
+msgid "Bonus points"
+msgstr "Бонусні очки"
+
+#: src/facetfall/powerups.py:41
+msgid "Wide paddle"
+msgstr "Широка ракетка"
+
+#: src/facetfall/powerups.py:41
+msgid "Three balls"
+msgstr "Три м'ячі"
+
+#: src/facetfall/powerups.py:42
+msgid "Shield"
+msgstr "Щит"
+
+#: src/facetfall/powerups.py:42
+msgid "Slow ball"
+msgstr "Повільний м'яч"
+
+#: src/facetfall/powerups.py:42
+msgid "Sticky paddle"
+msgstr "Липка ракетка"
+
+#: src/facetfall/powerups.py:43
+msgid "Laser"
+msgstr "Лазер"
+
+#: src/facetfall/powerups.py:43
+msgid "Magnet"
+msgstr "Магніт"
+
+#: src/facetfall/powerups.py:44
+msgid "Fireball"
+msgstr "Вогняна куля"
+
+#: src/facetfall/powerups.py:44
+msgid "Mega ball"
+msgstr "Мега-м'яч"
+
+#: src/facetfall/powerups.py:44
+msgid "Split balls"
+msgstr "Розщеплення м'ячів"
+
+#: src/facetfall/powerups.py:45
+msgid "Narrow paddle"
+msgstr "Вузька ракетка"
+
+#: src/facetfall/powerups.py:45
+msgid "Fast ball"
+msgstr "Швидкий м'яч"
+
+#: src/facetfall/powerups.py:45
+msgid "Reversed controls"
+msgstr "Обернене керування"

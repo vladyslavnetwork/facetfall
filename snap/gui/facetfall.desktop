@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Application
+Name=Facetfall
+GenericName=Brick breaker
+GenericName[uk]=Арканоїд
+Comment=Break every facet. Don't let the ball fall!
+Comment[uk]=Розбий кожну грань. Не впусти м'яч!
+Comment[pl]=Rozbij każdą fasetę. Nie upuść piłki!
+Comment[de]=Zerschlage jede Facette. Lass den Ball nicht fallen!
+Comment[fr]=Brisez chaque facette. Ne laissez pas tomber la balle !
+Comment[es]=Rompe cada faceta. ¡No dejes caer la bola!
+Exec=facetfall
+Icon=${SNAP}/meta/gui/facetfall.png
+Terminal=false
+Categories=Game;ArcadeGame;
+Keywords=arcade;retro;bricks;ball;paddle;breaker;game;
+Keywords[uk]=аркада;ретро;арканоїд;м'яч;ракетка;гра;
+StartupWMClass=facetfall

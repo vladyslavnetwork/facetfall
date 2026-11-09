@@ -1,0 +1,205 @@
+# fr translation for Facetfall.
+# This file is distributed under the same license as the facetfall package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: facetfall 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 08:00+0000\n"
+"PO-Revision-Date: 2026-11-09 12:00+0200\n"
+"Last-Translator: Vladyslav\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/facetfall/game.py:173 src/facetfall/powerups.py:43
+msgid "Extra life"
+msgstr "Vie supplémentaire"
+
+#: src/facetfall/game.py:559
+#, python-brace-format
+msgid "+{n} points"
+msgstr "+{n} points"
+
+#: src/facetfall/game.py:603 src/facetfall/game.py:702
+msgid "HI-SCORE"
+msgstr "RECORD"
+
+#: src/facetfall/game.py:615
+msgid "Break every facet. Don't let the ball fall!"
+msgstr "Brisez chaque facette. Ne laissez pas tomber la balle !"
+
+#: src/facetfall/game.py:617
+msgid "On"
+msgstr "Oui"
+
+#: src/facetfall/game.py:617
+msgid "Off"
+msgstr "Non"
+
+#: src/facetfall/game.py:619
+msgid "New game"
+msgstr "Nouvelle partie"
+
+#: src/facetfall/game.py:620
+#, python-brace-format
+msgid "Continue from level {n}"
+msgstr "Continuer au niveau {n}"
+
+#: src/facetfall/game.py:621 src/facetfall/game.py:646
+msgid "Bonuses"
+msgstr "Bonus"
+
+#: src/facetfall/game.py:622
+#, python-brace-format
+msgid "Language: {name}"
+msgstr "Langue : {name}"
+
+#: src/facetfall/game.py:623
+#, python-brace-format
+msgid "Sound: {state}"
+msgstr "Son : {state}"
+
+#: src/facetfall/game.py:624
+#, python-brace-format
+msgid "Fullscreen: {state}"
+msgstr "Plein écran : {state}"
+
+#: src/facetfall/game.py:625
+msgid "Quit"
+msgstr "Quitter"
+
+#: src/facetfall/game.py:640
+#, python-brace-format
+msgid "{n} levels · checkpoint every {k} levels"
+msgstr "{n} niveaux · point de contrôle tous les {k} niveaux"
+
+#: src/facetfall/game.py:642
+msgid ""
+"MOUSE or ARROWS move    CLICK or SPACE launch/fire    P pause    F11 "
+"fullscreen"
+msgstr ""
+"SOURIS ou FLÈCHES bouger    CLIC ou ESPACE lancer/tirer    P pause    F11 "
+"plein écran"
+
+#: src/facetfall/game.py:657
+msgid "Avoid:"
+msgstr "À éviter :"
+
+#: src/facetfall/game.py:662
+msgid "The further you get, the stronger the bonuses."
+msgstr "Plus vous avancez, plus les bonus sont puissants."
+
+#: src/facetfall/game.py:663
+msgid "Press any key to return"
+msgstr "Appuyez sur une touche pour revenir"
+
+#: src/facetfall/game.py:700
+msgid "SCORE"
+msgstr "SCORE"
+
+#: src/facetfall/game.py:704 src/facetfall/game.py:757
+#, python-brace-format
+msgid "LEVEL {n}"
+msgstr "NIVEAU {n}"
+
+#: src/facetfall/game.py:758
+msgid "Click or press SPACE to launch"
+msgstr "Cliquez ou appuyez sur ESPACE pour lancer"
+
+#: src/facetfall/game.py:760
+msgid "Level complete!"
+msgstr "Niveau terminé !"
+
+#: src/facetfall/game.py:763
+#, python-brace-format
+msgid "Checkpoint: level {n}"
+msgstr "Point de contrôle : niveau {n}"
+
+#: src/facetfall/game.py:766
+msgid "PAUSED"
+msgstr "PAUSE"
+
+#: src/facetfall/game.py:767
+msgid "P — continue    ESC — main menu"
+msgstr "P — reprendre    ÉCHAP — menu principal"
+
+#: src/facetfall/game.py:769
+msgid "GAME OVER"
+msgstr "PARTIE TERMINÉE"
+
+#: src/facetfall/game.py:771
+msgid "NEW HIGH SCORE!"
+msgstr "NOUVEAU RECORD !"
+
+#: src/facetfall/game.py:773 src/facetfall/game.py:779
+msgid "Press ENTER to continue"
+msgstr "Appuyez sur ENTRÉE pour continuer"
+
+#: src/facetfall/game.py:776
+msgid "YOU WIN!"
+msgstr "VICTOIRE !"
+
+#: src/facetfall/game.py:777
+#, python-brace-format
+msgid "All {n} levels cleared!"
+msgstr "Les {n} niveaux sont terminés !"
+
+#: src/facetfall/powerups.py:41
+msgid "Bonus points"
+msgstr "Points bonus"
+
+#: src/facetfall/powerups.py:41
+msgid "Wide paddle"
+msgstr "Raquette large"
+
+#: src/facetfall/powerups.py:41
+msgid "Three balls"
+msgstr "Trois balles"
+
+#: src/facetfall/powerups.py:42
+msgid "Shield"
+msgstr "Bouclier"
+
+#: src/facetfall/powerups.py:42
+msgid "Slow ball"
+msgstr "Balle lente"
+
+#: src/facetfall/powerups.py:42
+msgid "Sticky paddle"
+msgstr "Raquette collante"
+
+#: src/facetfall/powerups.py:43
+msgid "Laser"
+msgstr "Laser"
+
+#: src/facetfall/powerups.py:43
+msgid "Magnet"
+msgstr "Aimant"
+
+#: src/facetfall/powerups.py:44
+msgid "Fireball"
+msgstr "Boule de feu"
+
+#: src/facetfall/powerups.py:44
+msgid "Mega ball"
+msgstr "Méga-balle"
+
+#: src/facetfall/powerups.py:44
+msgid "Split balls"
+msgstr "Division des balles"
+
+#: src/facetfall/powerups.py:45
+msgid "Narrow paddle"
+msgstr "Raquette étroite"
+
+#: src/facetfall/powerups.py:45
+msgid "Fast ball"
+msgstr "Balle rapide"
+
+#: src/facetfall/powerups.py:45
+msgid "Reversed controls"
+msgstr "Commandes inversées"
