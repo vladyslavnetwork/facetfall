@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "facetfall"
-version = "1.0.0"
+version = "1.0.1"
 description = "Geometric brick breaker with 50 levels and 15 power-ups"
 readme = "README.md"
 license = "MIT"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facetfall\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-09 08:00+0000\n"
+"POT-Creation-Date: 2026-11-09 09:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,133 +17,167 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/facetfall/game.py:173 src/facetfall/powerups.py:43
+#: src/facetfall/about.py:58 src/facetfall/game.py:637
+msgid "About"
+msgstr ""
+
+#: src/facetfall/about.py:59
+#, python-brace-format
+msgid "Version {v}"
+msgstr ""
+
+#: src/facetfall/about.py:60
+#, python-brace-format
+msgid "Author: {name}"
+msgstr ""
+
+#: src/facetfall/about.py:61
+msgid "License: MIT"
+msgstr ""
+
+#: src/facetfall/about.py:62
+msgid "Source code, bug reports and updates:"
+msgstr ""
+
+#: src/facetfall/about.py:65
+msgid "Opened in your browser."
+msgstr ""
+
+#: src/facetfall/about.py:67
+msgid "Could not open the browser. Type the address manually."
+msgstr ""
+
+#: src/facetfall/about.py:69
+msgid "ENTER — open in browser    ESC — back"
+msgstr ""
+
+#: src/facetfall/game.py:175 src/facetfall/powerups.py:43
 msgid "Extra life"
 msgstr ""
 
-#: src/facetfall/game.py:559
+#: src/facetfall/game.py:569
 #, python-brace-format
 msgid "+{n} points"
 msgstr ""
 
-#: src/facetfall/game.py:603 src/facetfall/game.py:702
+#: src/facetfall/game.py:615 src/facetfall/game.py:715
 msgid "HI-SCORE"
 msgstr ""
 
-#: src/facetfall/game.py:615
+#: src/facetfall/game.py:627
 msgid "Break every facet. Don't let the ball fall!"
 msgstr ""
 
-#: src/facetfall/game.py:617
+#: src/facetfall/game.py:629
 msgid "On"
 msgstr ""
 
-#: src/facetfall/game.py:617
+#: src/facetfall/game.py:629
 msgid "Off"
 msgstr ""
 
-#: src/facetfall/game.py:619
+#: src/facetfall/game.py:631
 msgid "New game"
 msgstr ""
 
-#: src/facetfall/game.py:620
+#: src/facetfall/game.py:632
 #, python-brace-format
 msgid "Continue from level {n}"
 msgstr ""
 
-#: src/facetfall/game.py:621 src/facetfall/game.py:646
+#: src/facetfall/game.py:633 src/facetfall/game.py:659
 msgid "Bonuses"
 msgstr ""
 
-#: src/facetfall/game.py:622
+#: src/facetfall/game.py:634
 #, python-brace-format
 msgid "Language: {name}"
 msgstr ""
 
-#: src/facetfall/game.py:623
+#: src/facetfall/game.py:635
 #, python-brace-format
 msgid "Sound: {state}"
 msgstr ""
 
-#: src/facetfall/game.py:624
+#: src/facetfall/game.py:636
 #, python-brace-format
 msgid "Fullscreen: {state}"
 msgstr ""
 
-#: src/facetfall/game.py:625
+#: src/facetfall/game.py:638
 msgid "Quit"
 msgstr ""
 
-#: src/facetfall/game.py:640
+#: src/facetfall/game.py:653
 #, python-brace-format
 msgid "{n} levels · checkpoint every {k} levels"
 msgstr ""
 
-#: src/facetfall/game.py:642
+#: src/facetfall/game.py:655
 msgid ""
 "MOUSE or ARROWS move    CLICK or SPACE launch/fire    P pause    F11 "
 "fullscreen"
 msgstr ""
 
-#: src/facetfall/game.py:657
+#: src/facetfall/game.py:670
 msgid "Avoid:"
 msgstr ""
 
-#: src/facetfall/game.py:662
+#: src/facetfall/game.py:675
 msgid "The further you get, the stronger the bonuses."
 msgstr ""
 
-#: src/facetfall/game.py:663
+#: src/facetfall/game.py:676
 msgid "Press any key to return"
 msgstr ""
 
-#: src/facetfall/game.py:700
+#: src/facetfall/game.py:713
 msgid "SCORE"
 msgstr ""
 
-#: src/facetfall/game.py:704 src/facetfall/game.py:757
+#: src/facetfall/game.py:717 src/facetfall/game.py:770
 #, python-brace-format
 msgid "LEVEL {n}"
 msgstr ""
 
-#: src/facetfall/game.py:758
+#: src/facetfall/game.py:771
 msgid "Click or press SPACE to launch"
 msgstr ""
 
-#: src/facetfall/game.py:760
+#: src/facetfall/game.py:773
 msgid "Level complete!"
 msgstr ""
 
-#: src/facetfall/game.py:763
+#: src/facetfall/game.py:776
 #, python-brace-format
 msgid "Checkpoint: level {n}"
 msgstr ""
 
-#: src/facetfall/game.py:766
+#: src/facetfall/game.py:779
 msgid "PAUSED"
 msgstr ""
 
-#: src/facetfall/game.py:767
+#: src/facetfall/game.py:780
 msgid "P — continue    ESC — main menu"
 msgstr ""
 
-#: src/facetfall/game.py:769
+#: src/facetfall/game.py:782
 msgid "GAME OVER"
 msgstr ""
 
-#: src/facetfall/game.py:771
+#: src/facetfall/game.py:784
 msgid "NEW HIGH SCORE!"
 msgstr ""
 
-#: src/facetfall/game.py:773 src/facetfall/game.py:779
+#: src/facetfall/game.py:786 src/facetfall/game.py:792
 msgid "Press ENTER to continue"
 msgstr ""
 
-#: src/facetfall/game.py:776
+#: src/facetfall/game.py:789
 msgid "YOU WIN!"
 msgstr ""
 
-#: src/facetfall/game.py:777
+#: src/facetfall/game.py:790
 #, python-brace-format
 msgid "All {n} levels cleared!"
 msgstr ""

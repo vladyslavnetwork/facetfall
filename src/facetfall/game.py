@@ -6,6 +6,7 @@ import random
 import pygame
 
 from . import i18n, powerups
+from .about import About
 from .i18n import _
 from .levels import (BOMB, CHECKPOINT_EVERY, COLS, NORMAL, STEEL, TOTAL_LEVELS, TOUGH2,
                      TOUGH3, build_level)
@@ -35,7 +36,7 @@ STEEL_COL = (150, 160, 175)
 
 POINTS = {NORMAL: 50, TOUGH2: 100, TOUGH3: 150, BOMB: 80}
 HP = {NORMAL: 1, TOUGH2: 2, TOUGH3: 3, BOMB: 1, STEEL: 10 ** 9}
-MENU_ITEMS = ["start", "continue", "help", "language", "sound", "fullscreen", "quit"]
+MENU_ITEMS = ["start", "continue", "help", "language", "sound", "fullscreen", "about", "quit"]
 LEFT_KEYS = (pygame.K_LEFT, pygame.K_a)
 RIGHT_KEYS = (pygame.K_RIGHT, pygame.K_d)
 CONFIRM_KEYS = (pygame.K_RETURN, pygame.K_KP_ENTER, pygame.K_SPACE)
@@ -85,6 +86,7 @@ class Game:
         self.lives = 3
         self.new_record = False
         self.paused_from = "playing"
+        self.about = About()
         self.balls, self.bricks, self.capsules, self.bolts = [], {}, [], []
         self.particles, self.floaters, self.effects = [], [], {}
         self.paddle_x = W / 2
@@ -247,6 +249,11 @@ class Game:
             self.menu_key(key)
         elif self.state == "help":
             self.set_state("menu")
+        elif self.state == "about":
+            if key in (pygame.K_RETURN, pygame.K_KP_ENTER):
+                self.about.activate(self.settings["fullscreen"])
+            else:
+                self.set_state("menu")
         elif self.state == "paused":
             if key in (pygame.K_p, pygame.K_PAUSE) or key in CONFIRM_KEYS:
                 self.set_state(self.paused_from, self.state_timer)
@@ -296,6 +303,9 @@ class Game:
                     self.new_game(self.checkpoint())
                 elif item == "help":
                     self.set_state("help")
+                elif item == "about":
+                    self.about.status = None
+                    self.set_state("about")
                 elif item == "quit":
                     self.settings.save()
                     self.running = False
@@ -304,7 +314,7 @@ class Game:
 
     def update(self, dt):
         self.time += dt
-        if self.state in ("menu", "paused", "help"):
+        if self.state in ("menu", "paused", "help", "about"):
             return
         self.update_fx(dt)
         if self.state in ("game_over", "victory"):
@@ -595,6 +605,8 @@ class Game:
             self.draw_menu()
         elif self.state == "help":
             self.draw_help()
+        elif self.state == "about":
+            self.about.draw(self, W, H, (WHITE, GREY, YELLOW, RED))
         else:
             self.draw_play()
         pygame.display.flip()
@@ -622,12 +634,13 @@ class Game:
             "language": _("Language: {name}").format(name=i18n.language_name(i18n.current_language())),
             "sound": _("Sound: {state}").format(state=on if self.audio.enabled else off),
             "fullscreen": _("Fullscreen: {state}").format(state=on if self.settings["fullscreen"] else off),
+            "about": _("About"),
             "quit": _("Quit"),
         }
         items = self.menu_items()
         self.menu_index %= len(items)
         for i, item in enumerate(items):
-            y = 236 + i * 46
+            y = 232 + i * 44
             sel = i == self.menu_index
             label = labels[item]
             if sel and item in ("language", "sound", "fullscreen"):

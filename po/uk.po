@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facetfall 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-09 08:00+0000\n"
+"POT-Creation-Date: 2026-11-09 09:12+0000\n"
 "PO-Revision-Date: 2026-11-09 12:00+0200\n"
 "Last-Translator: Vladyslav\n"
 "Language-Team: none\n"
@@ -16,69 +16,103 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: src/facetfall/game.py:173 src/facetfall/powerups.py:43
+#: src/facetfall/about.py:58 src/facetfall/game.py:637
+msgid "About"
+msgstr "Про гру"
+
+#: src/facetfall/about.py:59
+#, python-brace-format
+msgid "Version {v}"
+msgstr "Версія {v}"
+
+#: src/facetfall/about.py:60
+#, python-brace-format
+msgid "Author: {name}"
+msgstr "Автор: {name}"
+
+#: src/facetfall/about.py:61
+msgid "License: MIT"
+msgstr "Ліцензія: MIT"
+
+#: src/facetfall/about.py:62
+msgid "Source code, bug reports and updates:"
+msgstr "Вихідний код, повідомлення про помилки та оновлення:"
+
+#: src/facetfall/about.py:65
+msgid "Opened in your browser."
+msgstr "Відкрито у браузері."
+
+#: src/facetfall/about.py:67
+msgid "Could not open the browser. Type the address manually."
+msgstr "Не вдалося відкрити браузер. Введіть адресу вручну."
+
+#: src/facetfall/about.py:69
+msgid "ENTER — open in browser    ESC — back"
+msgstr "ENTER — відкрити у браузері    ESC — назад"
+
+#: src/facetfall/game.py:175 src/facetfall/powerups.py:43
 msgid "Extra life"
 msgstr "Додаткове життя"
 
-#: src/facetfall/game.py:559
+#: src/facetfall/game.py:569
 #, python-brace-format
 msgid "+{n} points"
 msgstr "+{n} очок"
 
-#: src/facetfall/game.py:603 src/facetfall/game.py:702
+#: src/facetfall/game.py:615 src/facetfall/game.py:715
 msgid "HI-SCORE"
 msgstr "РЕКОРД"
 
-#: src/facetfall/game.py:615
+#: src/facetfall/game.py:627
 msgid "Break every facet. Don't let the ball fall!"
 msgstr "Розбий кожну грань. Не впусти м'яч!"
 
-#: src/facetfall/game.py:617
+#: src/facetfall/game.py:629
 msgid "On"
 msgstr "Увімк."
 
-#: src/facetfall/game.py:617
+#: src/facetfall/game.py:629
 msgid "Off"
 msgstr "Вимк."
 
-#: src/facetfall/game.py:619
+#: src/facetfall/game.py:631
 msgid "New game"
 msgstr "Нова гра"
 
-#: src/facetfall/game.py:620
+#: src/facetfall/game.py:632
 #, python-brace-format
 msgid "Continue from level {n}"
 msgstr "Продовжити з рівня {n}"
 
-#: src/facetfall/game.py:621 src/facetfall/game.py:646
+#: src/facetfall/game.py:633 src/facetfall/game.py:659
 msgid "Bonuses"
 msgstr "Бонуси"
 
-#: src/facetfall/game.py:622
+#: src/facetfall/game.py:634
 #, python-brace-format
 msgid "Language: {name}"
 msgstr "Мова: {name}"
 
-#: src/facetfall/game.py:623
+#: src/facetfall/game.py:635
 #, python-brace-format
 msgid "Sound: {state}"
 msgstr "Звук: {state}"
 
-#: src/facetfall/game.py:624
+#: src/facetfall/game.py:636
 #, python-brace-format
 msgid "Fullscreen: {state}"
 msgstr "Повний екран: {state}"
 
-#: src/facetfall/game.py:625
+#: src/facetfall/game.py:638
 msgid "Quit"
 msgstr "Вийти"
 
-#: src/facetfall/game.py:640
+#: src/facetfall/game.py:653
 #, python-brace-format
 msgid "{n} levels · checkpoint every {k} levels"
 msgstr "{n} рівнів · контрольна точка кожні {k} рівнів"
 
-#: src/facetfall/game.py:642
+#: src/facetfall/game.py:655
 msgid ""
 "MOUSE or ARROWS move    CLICK or SPACE launch/fire    P pause    F11 "
 "fullscreen"
@@ -86,65 +120,65 @@ msgstr ""
 "МИША або СТРІЛКИ рух    КЛІК або ПРОБІЛ запуск/постріл    P пауза    F11 "
 "повний екран"
 
-#: src/facetfall/game.py:657
+#: src/facetfall/game.py:670
 msgid "Avoid:"
 msgstr "Уникай:"
 
-#: src/facetfall/game.py:662
+#: src/facetfall/game.py:675
 msgid "The further you get, the stronger the bonuses."
 msgstr "Що далі проходиш, то крутіші бонуси."
 
-#: src/facetfall/game.py:663
+#: src/facetfall/game.py:676
 msgid "Press any key to return"
 msgstr "Натисни будь-яку клавішу, щоб повернутися"
 
-#: src/facetfall/game.py:700
+#: src/facetfall/game.py:713
 msgid "SCORE"
 msgstr "РАХУНОК"
 
-#: src/facetfall/game.py:704 src/facetfall/game.py:757
+#: src/facetfall/game.py:717 src/facetfall/game.py:770
 #, python-brace-format
 msgid "LEVEL {n}"
 msgstr "РІВЕНЬ {n}"
 
-#: src/facetfall/game.py:758
+#: src/facetfall/game.py:771
 msgid "Click or press SPACE to launch"
 msgstr "Клікни або натисни ПРОБІЛ, щоб запустити м'яч"
 
-#: src/facetfall/game.py:760
+#: src/facetfall/game.py:773
 msgid "Level complete!"
 msgstr "Рівень пройдено!"
 
-#: src/facetfall/game.py:763
+#: src/facetfall/game.py:776
 #, python-brace-format
 msgid "Checkpoint: level {n}"
 msgstr "Контрольна точка: рівень {n}"
 
-#: src/facetfall/game.py:766
+#: src/facetfall/game.py:779
 msgid "PAUSED"
 msgstr "ПАУЗА"
 
-#: src/facetfall/game.py:767
+#: src/facetfall/game.py:780
 msgid "P — continue    ESC — main menu"
 msgstr "P — продовжити    ESC — головне меню"
 
-#: src/facetfall/game.py:769
+#: src/facetfall/game.py:782
 msgid "GAME OVER"
 msgstr "ГРУ ЗАКІНЧЕНО"
 
-#: src/facetfall/game.py:771
+#: src/facetfall/game.py:784
 msgid "NEW HIGH SCORE!"
 msgstr "НОВИЙ РЕКОРД!"
 
-#: src/facetfall/game.py:773 src/facetfall/game.py:779
+#: src/facetfall/game.py:786 src/facetfall/game.py:792
 msgid "Press ENTER to continue"
 msgstr "Натисни ENTER, щоб продовжити"
 
-#: src/facetfall/game.py:776
+#: src/facetfall/game.py:789
 msgid "YOU WIN!"
 msgstr "ПЕРЕМОГА!"
 
-#: src/facetfall/game.py:777
+#: src/facetfall/game.py:790
 #, python-brace-format
 msgid "All {n} levels cleared!"
 msgstr "Усі {n} рівнів пройдено!"
